@@ -38,6 +38,7 @@ if [ $USER_EXISTS -eq 0 ]; then
 	uci -q add_list rpcd.@login[-1].write="juci-broadcom-pwrmgmt"
 	uci -q add_list rpcd.@login[-1].write="juci-ddns"
 	uci -q add_list rpcd.@login[-1].write="juci-diagnostics"
+	uci -q add_list rpcd.@login[-1].write="juci-domos"
 	uci -q add_list rpcd.@login[-1].write="juci-ndt"
 	uci -q add_list rpcd.@login[-1].write="juci-dnsmasq-dhcp"
 	uci -q add_list rpcd.@login[-1].write="juci-dropbear"

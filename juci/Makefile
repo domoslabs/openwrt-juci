@@ -3,8 +3,8 @@ include $(TOPDIR)/rules.mk
 PKG_NAME:=juci
 
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_URL:=https://dev.iopsys.eu/iopsys/juci.git
-PKG_SOURCE_VERSION:=246d084b093ebd493ea6cb1c256fd6e656a654a7
+PKG_SOURCE_URL:=https://github.com/domoslabs/juci.git
+PKG_SOURCE_VERSION:=f592ce63477cf320c8e879d7a48823903b37fb3e
 PKG_VERSION:=2019-12-19
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_SOURCE_VERSION).tar.gz
@@ -119,6 +119,7 @@ $(eval $(call RegisterAddon,Plugins,juci-upnp, UPnP Configuration Module,+miniup
 $(eval $(call RegisterAddon,Plugins,juci-usb, USB Module,+questd))
 $(eval $(call RegisterAddon,Plugins,juci-wireless, Wireless Management Module,+wifimngr))
 $(eval $(call RegisterAddon,Plugins,juci-wifilife, WiFi Life Module,+wifilife))
+$(eval $(call RegisterAddon,Plugins,juci-domos, Domos statistics))
 $(eval $(call RegisterAddon,Themes,juci-theme-iopsys))
 
 ####### dynamically publish themes as packages #######

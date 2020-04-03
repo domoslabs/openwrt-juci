@@ -700,6 +700,11 @@ config menu
 	list require 'ubus:juci.diagnostics'
 
 config menu
+	option path 'status/domos'
+	option page 'status-domos'
+	list acls 'juci-domos'
+
+config menu
 	option path 'status/diagnostics/speedtest'
 	option page 'status-diagnostics-speedtest'
 	list acls 'juci-diagnostics'
